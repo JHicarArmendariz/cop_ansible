@@ -2,7 +2,7 @@
 Hackaton de operaciones.
 Este es el enfoque: 
 
-## Requisitos técnicos para participar,
+## Requisitos técnicos para participar
 
 * Ansible 2.9
 * Repo en github
