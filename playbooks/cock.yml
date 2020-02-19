@@ -1,0 +1,7 @@
+---
+# El playbook que lo hace tó.
+
+- hosts: all
+
+  roles:
+    - create_instance
