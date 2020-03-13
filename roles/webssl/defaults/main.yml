@@ -1,0 +1,11 @@
+---
+
+- import_tasks: nginx.yml
+  tags:
+    - nginx_ssl
+    - nginx
+
+- import_tasks: ssl.yml
+  tags:
+    - nginx_ssl
+    - ssl

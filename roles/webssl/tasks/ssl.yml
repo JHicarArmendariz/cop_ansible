@@ -1,0 +1,10 @@
+---
+
+- name: Install
+  yum:
+    name: nginx
+    state: latest
+    update_cache: true
+  
+- pip: Install pyOpenSSL to use openssl_privatekey ansible module
+  
