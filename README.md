@@ -51,10 +51,12 @@ Roles:
 Habrá dos playbooks:
 
 1. Crear instancia
+   1. Aquí hay que crear también el inventario
+
 2. Crear webserver_ssl (dos tasks - webserver y ssl llamados desde un main.yml)
 
   1. Copiar el repo del nginx (/etc/yum.repos.d/nginx.repo)
-  2. Instalar el paquete
+  2. Instalar los paquetes
 
      ```text
      http://nginx.org/packages/mainline/rhel/7/$basearch/
