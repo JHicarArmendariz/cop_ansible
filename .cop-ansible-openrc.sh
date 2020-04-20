@@ -29,9 +29,10 @@ unset OS_TENANT_NAME
 export OS_USERNAME="jhicar.prd"
 
 # With Keystone you pass the keystone password.
-echo "Please enter your OpenStack Password for project $OS_PROJECT_NAME as user $OS_USERNAME: "
-read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD=$OS_PASSWORD_INPUT
+#echo "Please enter your OpenStack Password for project $OS_PROJECT_NAME as user $OS_USERNAME: "
+#read -sr OS_PASSWORD_INPUT
+#export OS_PASSWORD=$OS_PASSWORD_INPUT
+export OS_PASSWORD="<clave_ldap_datio>"
 
 # If your configuration has multiple regions, we set that information here.
 # OS_REGION_NAME is optional and only valid in certain environments.
