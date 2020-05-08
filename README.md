@@ -88,3 +88,33 @@ sudo update-ca-certificates
 Dentro, hacemos varias tasks y ponerle tags (por si ha)
 
 Siguiente tarea... Crear la base de datos para gitea (mariaDB + Gitea)
+### nginx
+
+```yml
+- name: Servicio de nginx activo 
+  service: name=nginx state=started enabled=yes
+```
+
+### Securización
+
+URLs interesantes:
+
+- <https://www.rosehosting.com/blog/how-to-generate-a-self-signed-ssl-certificate-on-linux/>
+- <https://jamielinux.com/docs/openssl-certificate-authority/index.html>
+
+## MariadDB
+
+Otro role:
+
+1.- Instalamos los módulos
+
+- name: Mysql and modules
+  - maria-db 
+  - mysql
+
+## Gitea
+
+- generamos la base de datos en mariaDB
+
+### Backup
+configurar la base datos
